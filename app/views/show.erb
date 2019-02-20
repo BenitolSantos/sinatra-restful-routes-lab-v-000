@@ -6,6 +6,8 @@
 </form>
 
 <form action="/articles/<%= @article.id %>/delete" method="post">
+  <h1> <%= @recipe.title %> </h1>
+  <h1> <%= @recipe.content %> </h1>
   <input id="hidden" type="hidden" name="_method" value="delete">
   <input type="submit" value="delete">
 </form>
