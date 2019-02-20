@@ -1,4 +1,6 @@
 <form class="" action="/articles/<%= @recipe.id %>" method="post">
+  <h1> <%= @recipe.title %> </h1>
+  <h1> <%= @recipe.content %> </h1>
   <input id="hidden" type="hidden" name="_method" value="patch">
   <input type="text" name="name" value="name">
   <input type="text" name="ingredients" value="ingredients">
@@ -6,8 +8,6 @@
 </form>
 
 <form action="/articles/<%= @article.id %>/delete" method="post">
-  <h1> <%= @recipe.title %> </h1>
-  <h1> <%= @recipe.content %> </h1>
   <input id="hidden" type="hidden" name="_method" value="delete">
   <input type="submit" value="delete">
 </form>
